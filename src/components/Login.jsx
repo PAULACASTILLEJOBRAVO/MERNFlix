@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import {
@@ -28,8 +28,6 @@ var imgStyle = {
 };
 
 export default function Login() {
-  const [loginMessage, setLoginMessage] = useState(null);
-
 
   const navigate = useNavigate();
 
@@ -67,7 +65,6 @@ export default function Login() {
                   useOneTap
               />
             </GoogleOAuthProvider>
-              {loginMessage}
             </CardText>
             <Media style={imgStyle} object src={MyImgLogin} alt="Login" />
           </Card>

@@ -4,8 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { Collapse, Navbar, NavbarBrand, Nav, NavItem, NavLink, NavbarText } from 'reactstrap';
 
-// import config from '../config';
-
 export default function Header(){
 
   const navigate = useNavigate();
